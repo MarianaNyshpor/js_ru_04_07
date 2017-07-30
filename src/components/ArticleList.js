@@ -54,7 +54,9 @@ ArticlesList.propTypes = {
     toggleOpenItem: PropTypes.func.isRequired
 }
 
-export default connect(
-    ({ articles }) => ({ articles }),
+export default connect((state) =>({
+    articles: state.filter
+}),
+    //({ articles }) => ({ articles }),
     { deleteArticle }
 )(accordion(ArticlesList))
