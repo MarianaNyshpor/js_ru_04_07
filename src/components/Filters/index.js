@@ -12,7 +12,11 @@ class Filters extends Component {
         const {filterValue} = this.props
         return (
             <div>
+<<<<<<< HEAD
                 <SelectFilter articles = {filterValue} />
+=======
+                <SelectFilter />
+>>>>>>> upstream/master
                 <DateRange />
             </div>
         )
